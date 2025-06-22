@@ -126,9 +126,15 @@ for (let i9 = 0; i9 < names.length; i9++){
 
 console.log("3 nama pertama yang mengandung huruf 'a':", resultNames)
 
-// // Hitung total karakter dari semua nama dalam array.
-// const namesTwo = ['Ani', 'Budi', 'Citra']; // 12 karakter
+// Hitung total karakter dari semua nama dalam array.
+const namesTwo = ['Ani', 'Budi', 'Citra']; // 12 karakter
 
+let totalCharacters = 0
+for (let i10 = 0; i10 < namesTwo.length; i10++) {
+    totalCharacters += namesTwo[i10].length
+}
+
+console.log("Total karakter:", totalCharacters)
 
 // // Output: ['Tono (22)', 'Tara (25)']
 // // Ubah array objek ke array string dengan format 'Nama (Umur)' dan hanya yang umurnya di atas 21.
