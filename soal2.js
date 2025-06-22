@@ -112,27 +112,27 @@ loopCheckOddEven(5)
 
 
 
-// /**
-//  * Menghitung Total Jumlah Angka
-//  * 
-//  * Buat program yang menjumlahkan semua angka dari 1 sampai dengan 100 menggunakan loop. Gunakan function yang mengirimkan value hasil penjumlahan tersebut
-//  */
+/**
+* Menghitung Total Jumlah Angka
+* 
+* Buat program yang menjumlahkan semua angka dari 1 sampai dengan 100 menggunakan loop. Gunakan function yang mengirimkan value hasil penjumlahan tersebut
+*/
 
-// function totalValue(inputNumber) {
-//     if (typeof inputNumber === "number"){
-//         let totalNumber = 0
-//         for (let index = 1; index <=inputNumber;  index++){
-//             totalNumber = totalNumber + index
-//         }
-//         console.log(totalNumber)
-//     }else {
-//         console.log("Invalid Number")
-//     }
+function totalValue(inputNumber) {
+     if (typeof inputNumber === "number"){
+         let totalNumber = 0
+         for (let index = 1; index <=inputNumber;  index++){
+             totalNumber = totalNumber + index
+         }
+         return totalNumber
+     }else {
+         return "Invalid Number"
+     }
 
-// }
+}
 
-// console.log(totalValue(100)); // 5050
-// console.log(totalValue("empat")); // invalid input
+console.log(totalValue(100)); // 5050
+console.log(totalValue("empat")); // invalid input
 
 
 
