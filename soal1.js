@@ -9,10 +9,15 @@ for (let i = 0; i < numbers.length; i++){
 console.log(resultOne)
 
 
-// const numbersTwo = [1, 2, 3, 4, 5, 6, 7, 8];
-// //Tambahkan semua angka ganjil dalam array dan kembalikan hasilnya.
-// let resultTwo
-
+const numbersTwo = [1, 2, 3, 4, 5, 6, 7, 8];
+//Tambahkan semua angka ganjil dalam array dan kembalikan hasilnya.
+let resultTwo = 0
+for (let i2 = 0; i2 < numbersTwo.length; i2++){
+    if (numbersTwo[i2] % 2 !== 0){
+        resultTwo += numbersTwo[i2]
+    }
+}
+console.log(resultTwo)
 
 // // Ubah semua huruf kecil dalam array menjadi huruf besar
 // let students = ["Tito", "arY", "Bostang"]
