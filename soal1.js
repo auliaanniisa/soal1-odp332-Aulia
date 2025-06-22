@@ -17,7 +17,7 @@ for (let i2 = 0; i2 < numbersTwo.length; i2++){
         resultTwo += numbersTwo[i2]
     }
 }
-console.log(resultTwo)
+console.log("Jumlah semua angka ganjil:", resultTwo)
 
 // Ubah semua huruf kecil dalam array menjadi huruf besar
 let students = ["Tito", "arY", "Bostang"]
