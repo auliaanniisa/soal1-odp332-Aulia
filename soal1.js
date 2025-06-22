@@ -74,10 +74,18 @@ const items = [
  }
 
  console.log("Total harga semua barang:", totalPrice)
- 
-// //Ambil hanya angka unik dari array (hapus duplikat).
-// const numbersThree = [1, 2, 2, 3, 4, 4, 5];
 
+//Ambil hanya angka unik dari array (hapus duplikat).
+const numbersThree = [1, 2, 2, 3, 4, 4, 5];
+
+let uniqueNumbers = []
+for (let i7 = 0; i7 < numbersThree.length; i7++){
+    if(!uniqueNumbers.includes(numbersThree[i7])){
+        uniqueNumbers.push(numbersThree[i7])
+    }
+}
+
+console.log("Angka-angka unik:", uniqueNumbers)
 
 // // Ambil nama produk dengan harga tertinggi
 // const products = [
