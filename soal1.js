@@ -61,14 +61,20 @@ for (let i5 = 0; i5 < people.length; i5++){
 }
 console.log("Orang-orang dengan panjang nama > 5: ", nameLongerThan5)
 
-// // Hitung total harga semua barang
-// const items = [
-//     { name: 'Book', price: 10000 },
-//     { name: 'Pen', price: 5000 },
-//     { name: 'Pencil', price: 3000 },
-// ];
-  
+// Hitung total harga semua barang
+const items = [
+     { name: 'Book', price: 10000 },
+     { name: 'Pen', price: 5000 },
+     { name: 'Pencil', price: 3000 },
+ ];
 
+ let totalPrice = 0
+ for (let i6 = 0; i6 < items.length; i6++) {
+    totalPrice += items[i6].price
+ }
+
+ console.log("Total harga semua barang:", totalPrice)
+ 
 // //Ambil hanya angka unik dari array (hapus duplikat).
 // const numbersThree = [1, 2, 2, 3, 4, 4, 5];
 
