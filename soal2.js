@@ -271,24 +271,29 @@ console.log(getDayName(8)); // Output: "Nomor hari tidak valid"
 
 
 
-// /**
-//  * Membalikkan Array
-//  * 
-//  * Buatlah sebuah fungsi JavaScript yang membalikkan urutan elemen dalam sebuah array menggunakan loop.
-//  * 
-//  * Langkah: 
-//  * 1. Buat sebuah fungsi bernama reverseArray.
-//  * 2. Fungsi tersebut harus menerima satu parameter berupa array arr.
-//  * 3. Boleh menggunakan built in function, setelah itu dicoba mengunakan loop untuk membalikkan urutan elemen dalam array tersebut.
-//  * 4. RETURN array yang telah dibalik.
-//  */
+/**
+* Membalikkan Array
+* 
+* Buatlah sebuah fungsi JavaScript yang membalikkan urutan elemen dalam sebuah array menggunakan loop.
+* 
+* Langkah: 
+* 1. Buat sebuah fungsi bernama reverseArray.
+* 2. Fungsi tersebut harus menerima satu parameter berupa array arr.
+* 3. Boleh menggunakan built in function, setelah itu dicoba mengunakan loop untuk membalikkan urutan elemen dalam array tersebut.
+* 4. RETURN array yang telah dibalik.
+*/
 
-// function reverseArray(arr) {
-//     // code disini yaa
-// }
+function reverseArray(arr) {
+// code disini yaa
+let reversed = []
+for (let indexTwo = arr.length - 1; indexTwo >= 0; indexTwo--) {
+    reversed.push(arr[indexTwo])
+}
+return reversed
+}
 
-// console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
-// console.log(reverseArray(['a', 'b', 'c'])); // Output: ['c', 'b', 'a']
+console.log(reverseArray([1, 2, 3, 4, 5])); // Output: [5, 4, 3, 2, 1]
+console.log(reverseArray(['a', 'b', 'c'])); // Output: ['c', 'b', 'a']
 
 
 
