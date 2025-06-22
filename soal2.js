@@ -224,32 +224,49 @@ console.log(canVote(17)); // false
 
 
 
-// /**
-//  * Menentukan Hari dalam Seminggu
-//  * 
-//  * Buatlah sebuah fungsi JavaScript yang menerima angka dan mengembalikan nama hari dalam seminggu.
-//  * 
-//  * Langkah:
-//  * 1. Buat sebuah fungsi bernama getDayName.
-//  * 2. Fungsi tersebut harus menerima satu parameter dayNumber (1 sampai 7).
-//  * 3. Gunakan pernyataan if, else if, dan else untuk mengembalikan nama hari dalam seminggu:
-//  *      a. 1: "Senin"
-//  *      b. 2: "Selasa"
-//  *      c. 3: "Rabu"
-//  *      d. 4: "Kamis"
-//  *      e. 5: "Jumat"
-//  *      f. 6: "Sabtu"
-//  *      g. 7: "Minggu"
-//  * 4. RETURN "Nomor hari tidak valid" jika dayNumber tidak berada dalam rentang 1 sampai 7.
-//  */
+/**
+* Menentukan Hari dalam Seminggu
+* 
+* Buatlah sebuah fungsi JavaScript yang menerima angka dan mengembalikan nama hari dalam seminggu.
+* 
+* Langkah:
+* 1. Buat sebuah fungsi bernama getDayName.
+* 2. Fungsi tersebut harus menerima satu parameter dayNumber (1 sampai 7).
+* 3. Gunakan pernyataan if, else if, dan else untuk mengembalikan nama hari dalam seminggu:
+*      a. 1: "Senin"
+*      b. 2: "Selasa"
+*      c. 3: "Rabu"
+*      d. 4: "Kamis"
+*      e. 5: "Jumat"
+*      f. 6: "Sabtu"
+*      g. 7: "Minggu"
+* 4. RETURN "Nomor hari tidak valid" jika dayNumber tidak berada dalam rentang 1 sampai 7.
+*/
 
-// function getDayName(dayNumber) {
-//     // code disini
-// }
+function getDayName(dayNumber) {
+     // code disini
+     if (dayNumber === 1) {
+        return "Senin"
+     } else if  (dayNumber === 2) {
+        return "Selasa"
+     } else if  (dayNumber === 3) {
+        return "Rabu"
+     } else if  (dayNumber === 4) {
+        return "Kamis"
+     } else if  (dayNumber === 5) {
+        return "Jumat"
+     } else if  (dayNumber === 6) {
+        return "Sabtu"
+     } else if  (dayNumber === 7) {
+        return "Minggu"
+     } else {
+        return "Nomor hari tidak valid"
+     }
+}
 
-// console.log(getDayName(1)); // Output: "Senin"
-// console.log(getDayName(5)); // Output: "Jumat"
-// console.log(getDayName(8)); // Output: "Nomor hari tidak valid"
+console.log(getDayName(1)); // Output: "Senin"
+console.log(getDayName(5)); // Output: "Jumat"
+console.log(getDayName(8)); // Output: "Nomor hari tidak valid"
 
 
 
