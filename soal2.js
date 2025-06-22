@@ -28,14 +28,23 @@ console.log(checkOddEven("enam")); // invalid input
  * Buat sebuah program yang meminta usia seseorang, lalu gunakan if-else untuk menampilkan apakah seseorang tersebut sudah dewasa (>=18 tahun) atau belum. Gunakan if-else dan function yang mengembalikan string
  */
 
-// function checkMature() {
+function checkMature(age) {
+    if (typeof age !== "number" || age < 0) {
+        return "invalid input"
+    }
 
-// }
+    if (age >= 18) {
+        return "Dewasa"
+    } else {
+        return "Belum dewasa"
+    }
 
-// console.log(checkMature(18)); // Dewasa
-// console.log(checkMature(17)); // Belum dewasa
-// console.log(checkMature("enam")); // invalid input
-// console.log(checkMature(-1)); // invalid input
+}
+
+console.log(checkMature(18)); // Dewasa
+console.log(checkMature(17)); // Belum dewasa
+console.log(checkMature("enam")); // invalid input
+console.log(checkMature(-1)); // invalid input
 
 
 
