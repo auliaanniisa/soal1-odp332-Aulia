@@ -106,9 +106,10 @@ const products = [
 
  console.log("Produk dengan harga tertinggi:", mostExpensiveProduct)
 
-// // Buat kalimat dari array kata.
-// const words = ['Belajar', 'array', 'itu', 'menyenangkan'];
-
+// Buat kalimat dari array kata.
+const words = ['Belajar', 'array', 'itu', 'menyenangkan'];
+const sentence = words.join(" ")
+console.log("Kalimat lengkap:", sentence)
 
 // // Ambil hanya 3 data pertama yang mengandung kata 'a' pada nama.
 // const names = ['Aldo', 'Budi', 'Caca', 'Dinda', 'Eka', 'Fajar'];
