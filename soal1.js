@@ -111,9 +111,20 @@ const words = ['Belajar', 'array', 'itu', 'menyenangkan'];
 const sentence = words.join(" ")
 console.log("Kalimat lengkap:", sentence)
 
-// // Ambil hanya 3 data pertama yang mengandung kata 'a' pada nama.
-// const names = ['Aldo', 'Budi', 'Caca', 'Dinda', 'Eka', 'Fajar'];
+// Ambil hanya 3 data pertama yang mengandung kata 'a' pada nama.
+const names = ['Aldo', 'Budi', 'Caca', 'Dinda', 'Eka', 'Fajar'];
 
+let resultNames = []
+for (let i9 = 0; i9 < names.length; i9++){
+    if (names[i9].toLowerCase().includes("a")){
+        resultNames.push(names[i9])
+    }
+    if (resultNames.length === 3) {
+        break;
+    }
+}
+
+console.log("3 nama pertama yang mengandung huruf 'a':", resultNames)
 
 // // Hitung total karakter dari semua nama dalam array.
 // const namesTwo = ['Ani', 'Budi', 'Citra']; // 12 karakter
