@@ -19,10 +19,20 @@ for (let i2 = 0; i2 < numbersTwo.length; i2++){
 }
 console.log(resultTwo)
 
-// // Ubah semua huruf kecil dalam array menjadi huruf besar
-// let students = ["Tito", "arY", "Bostang"]
-// let resultThree
+// Ubah semua huruf kecil dalam array menjadi huruf besar
+let students = ["Tito", "arY", "Bostang"]
+let resultThree = []
 
+for (let i3 = 0; i3 < students.length; i3++){
+    let name = students[i3]
+
+    if (name === name.toUpperCase()){
+        resultThree.push(name)
+    } else if (name !== name.toUpperCase()){
+        resultThree.push(name.toUpperCase())
+    }
+}
+console.log(resultThree)
 
 // // Ambil hanya nama-nama orang yang umurnya di atas 18 tahun.
 // // Ambil hanya orang yang panjang namanya lebih dari 5
