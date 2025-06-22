@@ -87,13 +87,24 @@ for (let i7 = 0; i7 < numbersThree.length; i7++){
 
 console.log("Angka-angka unik:", uniqueNumbers)
 
-// // Ambil nama produk dengan harga tertinggi
-// const products = [
-//     { name: 'Laptop', price: 15000000 },
-//     { name: 'Phone', price: 8000000 },
-//     { name: 'Monitor', price: 3000000 },
-// ];
+// Ambil nama produk dengan harga tertinggi
+const products = [
+     { name: 'Laptop', price: 15000000 },
+     { name: 'Phone', price: 8000000 },
+     { name: 'Monitor', price: 3000000 },
+ ];
 
+ let maxPrice = 0
+ let mostExpensiveProduct = ""
+
+ for (let i8 = 0; i8 < products.length; i8++){
+    if (products[i8].price > maxPrice) {
+        maxPrice = products[i8].price
+        mostExpensiveProduct = products[i8].name
+    }
+ }
+
+ console.log("Produk dengan harga tertinggi:", mostExpensiveProduct)
 
 // // Buat kalimat dari array kata.
 // const words = ['Belajar', 'array', 'itu', 'menyenangkan'];
