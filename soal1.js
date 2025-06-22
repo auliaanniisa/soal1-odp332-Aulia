@@ -52,6 +52,15 @@ for (let i4 = 0; i4 < people.length; i4++){
 }
 console.log("Nama-nama orang berusia > 18 tahun:", peopleOver18)
 
+//2. Nama-nama orang dengan panjang nama > 5
+let nameLongerThan5 = []
+for (let i5 = 0; i5 < people.length; i5++){
+    if (people[i5].name.length > 5){
+        nameLongerThan5.push(people[i5].name)
+    }
+}
+console.log("Orang-orang dengan panjang nama > 5: ", nameLongerThan5)
+
 // // Hitung total harga semua barang
 // const items = [
 //     { name: 'Book', price: 10000 },
