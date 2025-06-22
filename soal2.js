@@ -297,15 +297,18 @@ console.log(reverseArray(['a', 'b', 'c'])); // Output: ['c', 'b', 'a']
 
 
 
-// /**
-//  * Buat function untuk mengecek apakah input tersebut palindrome, return true jika palindrome, dan jika tidak palindrome maka return false
-//  * 
-//  */
+/**
+* Buat function untuk mengecek apakah input tersebut palindrome, return true jika palindrome, dan jika tidak palindrome maka return false
+* 
+*/
 
-// const isPalindrome = (inputUser) => {
+const isPalindrome = (inputUser) => {
+    // Hilangkan spasi dam ubah ke huruf kecil
+    const textCleaned = inputUser.toLowerCase().replace(/\s/g,"")
+    const reversed1 = textCleaned.split("").reverse().join("")
+    return textCleaned === reversed1
+}
 
-// }
-
-// console.log(isPalindrome("kasur rusak")); // true
-// console.log(isPalindrome("kodok")); // true
-// console.log(isPalindrome("makan malam")); // false
+console.log(isPalindrome("kasur rusak")); // true
+console.log(isPalindrome("kodok")); // true
+console.log(isPalindrome("makan malam")); // false
