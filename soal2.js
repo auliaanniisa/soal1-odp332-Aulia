@@ -88,22 +88,26 @@ console.log(scoreReport("sembilan puluh"), "==> LINE 88"); // invalid input
 
 
 
-// /**
-//  * Menampilkan Bilangan Ganjil dari 1 sampai 20
-//  * 
-//  * Buat program yang menampilkan semua bilangan ganjil dari 1 sampai 20 menggunakan for loop
-//  */
+/**
+* Menampilkan Bilangan Ganjil dari 1 sampai 20
+* 
+* Buat program yang menampilkan semua bilangan ganjil dari 1 sampai 20 menggunakan for loop
+*/
 
-// function loopCheckOddEven() {
+function loopCheckOddEven() {
+    for (let i = 1; i <= 20; i++) {
+        if (i & 2 !== 0) {
+            console.log(i)
+        }
+    }
+}
 
-// }
-
-// loopCheckOddEven(5)
-// // 1 => Bilangan Ganjil
-// // 2 => Bilangan Genap
-// // 3 => Bilangan Ganjil
-// // 4 => Bilangan Genap
-// // 5 => Bilangan Ganjil
+loopCheckOddEven(5)
+// 1 => Bilangan Ganjil
+// 2 => Bilangan Genap
+// 3 => Bilangan Ganjil
+// 4 => Bilangan Genap
+// 5 => Bilangan Ganjil
 // loopCheckOddEven("lima") // invalid input
 
 
