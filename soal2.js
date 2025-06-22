@@ -165,26 +165,35 @@ console.log(checkVowels("mie ayam")); //4
 
 
 
-// /**
-//  * Cek karakter vokal atau konsonan
-//  * 
-//  * Buatlah sebuah fungsi untuk memeriksa apakah sebuah karakter adalah vokal atau konsonan
-//  * 
-//  * Langkah:
-//  * 1. Buat sebuah fungsi bernama checkVowelConsonant.
-//  * 2. Fungsi tersebut harus menerima satu parameter, contoh nama parameternya "char".
-//  * 3. Gunakan pernyataan if, else if, dan else untuk memeriksa apakah char adalah vokal atau konsonan.
-//  * 4. Anggap bahwa input selalu berupa SATU KARAKTER HURUF.
-//  * 5. RETURN string "Vokal" atau "Konsonan" sesuai dengan nilai char.
-//  */
+/**
+* Cek karakter vokal atau konsonan
+* 
+* Buatlah sebuah fungsi untuk memeriksa apakah sebuah karakter adalah vokal atau konsonan
+* 
+* Langkah:
+* 1. Buat sebuah fungsi bernama checkVowelConsonant.
+* 2. Fungsi tersebut harus menerima satu parameter, contoh nama parameternya "char".
+* 3. Gunakan pernyataan if, else if, dan else untuk memeriksa apakah char adalah vokal atau konsonan.
+* 4. Anggap bahwa input selalu berupa SATU KARAKTER HURUF.
+* 5. RETURN string "Vokal" atau "Konsonan" sesuai dengan nilai char.
+*/
 
-// function checkVowelConsonant(char) {
-//     // code di scope ini yaa
-// }
+function checkVowelConsonant(char) {
+// code di scope ini yaa
+const lowerChar = char.toLowerCase()
 
-// console.log(checkVowelConsonant('A')); // Output: "Vokal"
-// console.log(checkVowelConsonant('b')); // Output: "Konsonan"
-// console.log(checkVowelConsonant('a')); // Output: "Vokal"
+if (lowerChar === "a" || lowerChar === "i" || lowerChar === "u" || lowerChar === "e" || lowerChar === "o") {
+    return "vokal"
+} else if (lowerChar >= "a" && lowerChar <= "z") {
+    return "konsonan"
+} else {
+    return "invalid input"
+}
+}
+
+console.log(checkVowelConsonant('A')); // Output: "Vokal"
+console.log(checkVowelConsonant('b')); // Output: "Konsonan"
+console.log(checkVowelConsonant('a')); // Output: "Vokal"
 
 
 
