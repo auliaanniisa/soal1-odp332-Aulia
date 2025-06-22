@@ -136,11 +136,19 @@ for (let i10 = 0; i10 < namesTwo.length; i10++) {
 
 console.log("Total karakter:", totalCharacters)
 
-// // Output: ['Tono (22)', 'Tara (25)']
-// // Ubah array objek ke array string dengan format 'Nama (Umur)' dan hanya yang umurnya di atas 21.
-// const peopleTwo = [
-//     { name: 'Tono', age: 22 },
-//     { name: 'Tini', age: 19 },
-//     { name: 'Tara', age: 25 },
-// ];
+// Output: ['Tono (22)', 'Tara (25)']
+// Ubah array objek ke array string dengan format 'Nama (Umur)' dan hanya yang umurnya di atas 21.
+const peopleTwo = [
+     { name: 'Tono', age: 22 },
+     { name: 'Tini', age: 19 },
+     { name: 'Tara', age: 25 },
+];
 
+let peopleOver21 = []
+for (let i11 = 0; i11 < peopleTwo.length; i11++) {
+    if (peopleTwo[i11].age > 21) {
+        peopleOver21.push(`${peopleTwo[i11].name} (${peopleTwo[i11].age})`)
+    }
+}
+
+console.log("Nama-nama orang berusia > 21 tahun:", peopleOver21)
