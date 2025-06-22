@@ -48,29 +48,43 @@ console.log(checkMature(-1)); // invalid input
 
 
 
-// /**
-//  * Menentukan score student
-//  * 
-//  * Buat program yang mengubah nilai angka ke dalam nilai huruf (A, B, C, D, E) berdasarkan rentang berikut:
-//  * 90 - 100: A
-//  * 80 - 89: B
-//  * 70 - 79: C
-//  * 60 - 69: D
-//  * < 60: E
-//  * Gunakan if-else dan function yang mengembalikan string
-//  */
+/**
+* Menentukan score student
+* 
+* Buat program yang mengubah nilai angka ke dalam nilai huruf (A, B, C, D, E) berdasarkan rentang berikut:
+* 90 - 100: A
+* 80 - 89: B
+* 70 - 79: C
+* 60 - 69: D
+* < 60: E
+* Gunakan if-else dan function yang mengembalikan string
+*/
 
-// function scoreReport() {
+function scoreReport(score) {
+    if (typeof score !== "number" || score < 0 || score > 100) {
+        return "invalid input"
+    }
 
-// }
+    if (score >= 90) {
+        return "A"
+    } else if (score >= 80) {
+        return "B"
+    } else if (score >= 70) {
+        return "C"
+    } else if (score >= 60) {
+        return "D"
+    } else {
+        return "E"
+    }
+}
 
-// console.log(scoreReport(90)); // A
-// console.log(scoreReport(89)); // B
-// console.log(scoreReport(75)); // C
-// console.log(scoreReport(59)); // E
-// console.log(scoreReport(101)); // invalid input
-// console.log(scoreReport(-1)); // invalid input
-// console.log(scoreReport("sembilan puluh")); // invalid input
+console.log(scoreReport(90), "==> LINE 82"); // A
+console.log(scoreReport(89), "==> LINE 83"); // B
+console.log(scoreReport(75), "==> LINE 84"); // C
+console.log(scoreReport(59), "==> LINE 85"); // E
+console.log(scoreReport(101), "==> LINE 86"); // invalid input
+console.log(scoreReport(-1), "==> LINE 87"); // invalid input
+console.log(scoreReport("sembilan puluh"), "==> LINE 88"); // invalid input
 
 
 
