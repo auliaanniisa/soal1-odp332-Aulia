@@ -34,15 +34,23 @@ for (let i3 = 0; i3 < students.length; i3++){
 }
 console.log(resultThree)
 
-// // Ambil hanya nama-nama orang yang umurnya di atas 18 tahun.
-// // Ambil hanya orang yang panjang namanya lebih dari 5
-// const people = [
-//     { name: 'Andi', age: 17 },
-//     { name: 'Tito Alexsta', age: 20 },
-//     { name: 'Bostang', age: 22 },
-//     { name: 'Cici', age: 17 }
-// ];
+// Ambil hanya nama-nama orang yang umurnya di atas 18 tahun.
+// Ambil hanya orang yang panjang namanya lebih dari 5
+const people = [
+     { name: 'Andi', age: 17 },
+     { name: 'Tito Alexsta', age: 20 },
+     { name: 'Bostang', age: 22 },
+     { name: 'Cici', age: 17 }
+ ];
 
+//1. Nama-nama orang dengan usia > 18
+let peopleOver18 = []
+for (let i4 = 0; i4 < people.length; i4++){
+    if (people[i4].age > 18) {
+        peopleOver18.push(people[i4].name)
+    }
+}
+console.log("Nama-nama orang berusia > 18 tahun:", peopleOver18)
 
 // // Hitung total harga semua barang
 // const items = [
