@@ -6,7 +6,7 @@ for (let i = 0; i < numbers.length; i++){
         resultOne += numbers[i]
     }
 }
-console.log(resultOne)
+console.log("Jumlah semua angka genap:", resultOne)
 
 
 const numbersTwo = [1, 2, 3, 4, 5, 6, 7, 8];
