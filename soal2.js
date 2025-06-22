@@ -28,12 +28,12 @@ console.log(checkOddEven("enam")); // invalid input
  * Buat sebuah program yang meminta usia seseorang, lalu gunakan if-else untuk menampilkan apakah seseorang tersebut sudah dewasa (>=18 tahun) atau belum. Gunakan if-else dan function yang mengembalikan string
  */
 
-function checkMature(age) {
-    if (typeof age !== "number" || age < 0) {
+function checkMature(age1) {
+    if (typeof age1 !== "number" || age1 < 0) {
         return "invalid input"
     }
 
-    if (age >= 18) {
+    if (age1 >= 18) {
         return "Dewasa"
     } else {
         return "Belum dewasa"
@@ -197,24 +197,29 @@ console.log(checkVowelConsonant('a')); // Output: "Vokal"
 
 
 
-// /**
-//  * Menentukan kelayakan Voting
-//  * 
-//  * Buatlah sebuah fungsi JavaScript yang memeriksa apakah seseorang memenuhi syarat untuk memberikan suara dalam pemilihan berdasarkan usia.
-//  * 
-//  * Langkah:
-//  * 1. Buat sebuah fungsi bernama canVote.
-//  * 2. Fungsi tersebut harus menerima satu parameter age.
-//  * 3. Gunakan pernyataan if dan else untuk memeriksa apakah age lebih besar atau sama dengan 18.
-//  * 4. RETURN tipe data BOOLEAN, true jika age >= 18, dan false jika tidak.
-//  */
+/**
+* Menentukan kelayakan Voting
+* 
+* Buatlah sebuah fungsi JavaScript yang memeriksa apakah seseorang memenuhi syarat untuk memberikan suara dalam pemilihan berdasarkan usia.
+* 
+* Langkah:
+* 1. Buat sebuah fungsi bernama canVote.
+* 2. Fungsi tersebut harus menerima satu parameter age.
+* 3. Gunakan pernyataan if dan else untuk memeriksa apakah age lebih besar atau sama dengan 18.
+* 4. RETURN tipe data BOOLEAN, true jika age >= 18, dan false jika tidak.
+*/
 
-// function canVote(age) {
-//     // code di scope ini yaa
-// }
+function canVote(age) {
+     // code di scope ini yaa
+     if (age >= 18) {
+        return true
+     } else {
+        return false
+     }
+}
 
-// console.log(canVote(20)); // true
-// console.log(canVote(17)); // false
+console.log(canVote(20)); // true
+console.log(canVote(17)); // false
 
 
 
