@@ -136,18 +136,32 @@ console.log(totalValue("empat")); // invalid input
 
 
 
-// /**
-//  * Menghitung huruf vokal
-//  * 
-//  * Buat program yang menerima sebuah string, lalu hitung berapa banyak huruf vokal (a, e, i, o, u) di dalam string tersebut. Gunakan function untuk mengembalikan value total jumlah huruf vocal
-//  */
+/**
+* Menghitung huruf vokal
+* 
+* Buat program yang menerima sebuah string, lalu hitung berapa banyak huruf vokal (a, e, i, o, u) di dalam string tersebut. Gunakan function untuk mengembalikan value total jumlah huruf vocal
+*/
 
-// function checkVowels() {
+function checkVowels(text) {
+    if (typeof text !== "string") {
+        return "invalid input"
+    }
 
-// }
+    const vowels = ["a", "i", "u", "e", "o"]
+    let countVow = 0
 
-// console.log(checkVowels("I Love JavaScript")); // 6
-// console.log(checkVowels("mie ayam")); //4
+    for (let i2 = 0; i2 < text.length; i2++) {
+        let char = text[i2].toLowerCase()
+        if (vowels.includes(char)) {
+            countVow++
+        }
+    }
+
+    return countVow
+}
+
+console.log(checkVowels("I Love JavaScript")); // 6
+console.log(checkVowels("mie ayam")); //4
 
 
 
